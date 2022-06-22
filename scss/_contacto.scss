@@ -1,0 +1,22 @@
+
+form{
+    background-color: rgba(209, 173, 173, 0.521);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#exampleInputNombre1:focus{
+    background-color: aqua;
+}
+
+#exampleInputEmail1:focus{
+    background-color: aqua;
+}
+
+#exampleInputPassword1:focus{
+    background-color: aqua;
+}
+
+textarea:focus{
+    background-color: aqua;
+}

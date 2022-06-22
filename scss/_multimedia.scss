@@ -1,0 +1,22 @@
+.videos-text{
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;  
+    padding-bottom: 2rem;
+}
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    iframe{
+        margin: 5px;
+    }
+}
+
+.img-bm h2{
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;  
+    padding-bottom: 2rem;
+}

@@ -1,0 +1,535 @@
+    /* font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;*/
+
+/* Estilo universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Fin Estilo universal */
+
+/*Inicia estilos del body*/
+.contenedor{
+    min-height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto 150px 1fr 150px;
+    grid-template-areas: 
+    "header header"
+    "nav    nav"
+    "main   aside"
+    "footer footer";
+    gap: 5px;
+}
+/*termina estilos del body*/
+
+/* Inicia estilo el header */
+header{
+    grid-area: header;
+    background: linear-gradient( black, white);
+}
+
+.banner img{
+    width: 100%;
+    opacity: 0.1;
+}
+/*Termina estilo del header*/
+
+/*Inicia estilo en barra de navegacion*/
+nav{
+    grid-area: nav;
+    align-content: center;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-areas: "logo navBar";
+}
+
+.logo img{
+    width: 250px;
+    height: 150px;
+    grid-area: logo;
+    margin-left: 100px;
+}
+
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: navBar;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav__list li{
+    text-align: center;
+    list-style-type: none;
+}
+
+.nav__list li a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: larger;
+    transition: 0.5s;
+}
+
+.nav__list li a:hover{
+    font-size:x-large;
+}
+/*Termina estilo en barra de navegacion*/
+
+/*Inicia estilo el main*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: main;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.noticia1{
+    background-image: url(../img/img1.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 480px;
+    border: 2px outset white;
+    border-radius: 15px;
+    transition: height 1s, width 1s;
+}
+
+.noticia1:hover{
+    width: 410px;
+    height: 490px;
+}
+
+.titulo1{
+    font-family: 'Poppins', sans-serif;    
+    color: white;
+    text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+    margin-left: 1rem;                    
+}
+
+.titulo2{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-shadow: black;
+    text-shadow: -1px 1px 0 #000,
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px -1px 0 #000;
+    margin-left: 1rem;                           
+}
+
+.boton1{
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 275px;
+    margin-top: 380px;
+}
+
+.boton1 a{
+    text-decoration: none;
+}
+
+.noticia2{
+    background-image: url(../img/img2.jpg);
+    background-size: cover;
+    width: 700px;
+    height: 480px;
+    border: 2px outset white;
+    border-radius: 15px;
+    transition: height 1s, width 1s;
+}
+
+.noticia2:hover{
+    width: 710px;
+    height: 490px;
+}
+
+.boton2{
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 575px;
+    margin-top: 380px;
+}
+
+.boton2 a{
+    text-decoration: none;
+}
+
+.noticia3{
+    background-image: url(../img/img3.jpg);
+    background-size: cover;
+    width: 700px;
+    height: 480px;
+    border: 2px outset white;
+    border-radius: 15px;
+    transition: height 1s, width 1s;
+}
+
+.noticia3:hover{
+    width: 710px;
+    height: 490px;
+}
+
+.noticia4{
+    background-image: url(../img/img4.jpg);
+    background-size: cover;
+    width: 400px;
+    height: 480px;
+    border: 2px outset white;
+    border-radius: 15px;
+    transition: height 1s, width 1s;
+}
+
+.noticia4:hover{
+    width: 410px;
+    height: 490px;
+}
+/*Termina estilo main*/
+
+/* Inicia el aside */
+aside{
+    grid-area: aside;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.torneos{
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+/* Termina el aside */
+
+/*Inicia estilo footer*/
+footer{
+    grid-area: footer;
+    background: linear-gradient(to top, rgb(0, 0, 0) 80%, white);
+}
+
+.footer h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;   
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.footer__list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    margin-left: 500px;
+    margin-right: 500px;
+    list-style-type: none;
+}
+
+.logo-red{
+    width: 70px;
+    height: 60px;
+    transition: 0.5s;
+} 
+
+.logo-red:hover{
+    width: 80px;
+    height: 70px;
+}
+
+.logo-fb{
+    width: 60px;
+    height: 45px;
+    transition: 0.5s;
+}
+
+.logo-fb:hover{
+    width: 70px;
+    height: 55px;
+}
+/*Termina estilo footer*/
+
+/* Inicia estilo html multimedia */
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videos iframe{
+    margin: 5px;
+}
+
+.videos-text{
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;  
+    padding-bottom: 2rem;
+}
+
+.img-bm h2{
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Lato', sans-serif;  
+    padding-bottom: 2rem;
+}
+
+.img-bm__cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-bm__team{
+    width: 500px;
+    height: 350px;
+    margin: 5px;
+    transition: 0.5s;
+}
+
+.img-bm__team:hover{
+    width: 530px;
+    height: 380px;
+}
+/* Termina estilo html multimedia */
+
+/* Inicia estilo html miembros */
+.nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.nosotros-img{
+    margin-left: 1rem;
+    width: 300px;
+    height: 300px;
+}
+
+.nosotros-text{
+    width: 800px;
+    margin-left: 1rem;
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+}
+/*Termina estilo html miembros*/
+
+/* Incia estilo html sobre nosotros */
+.sobre-nos img{
+    width: 100%;
+}
+
+.sobre-nos__text{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.sobre-nos__text h2{
+    font-family: 'Lato', sans-serif;
+}
+
+.sobre-nos__text p{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+/* Termina estilo html sobre nosotros */
+
+/* Inicia estilo en contactos*/
+form{
+    background-color: black;
+    width: 400px;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+form h2{
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+form .form__text{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+input:focus{
+    background-color: aqua;
+    height: 20px;
+    font-size: larger;
+}
+
+textarea:focus{
+    background-color: aqua;
+    font-size: larger;
+}
+/* Termina estilo en contactos */
+
+
+
+
+
+/*Inicia responsive para celular*/
+@media screen and (max-width: 375px){
+
+/* Inicia estilo header responsive */
+    header{
+        display: none;
+    }
+/* Termina estilo header responsive */
+
+/* Inicia estilo contenedor responsive*/
+    .contenedor{
+        grid-template-columns: 375px;
+        grid-template-rows: auto 1fr 150px;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "footer";
+    }
+/* Termina estilo contenedor responsive*/
+
+/*Inicia estilo aside responsive*/
+    .aside{
+        display: none;
+    }
+/*Termina estilo aside responsive*/
+
+/* Inicia estilo navegador responsive */
+    .nav{
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-areas: "logo" 
+                             "navBar";
+    }
+
+    .logo{
+        background: linear-gradient(to bottom, black 10%, white )
+    }
+    
+    .nav__list li a{
+        font-size: small;
+    }
+/* Termina estilo navegador responsive */
+
+/* Inicia estilo main responsive */
+    .noticia1{
+        width: 275px;
+        height: 380px;
+    }
+    
+    .boton1{
+        font-size: smaller;
+        width: 100px;
+        height: 30px;
+        margin-left: 150px;
+        margin-top: 280px;
+    }
+
+    .noticia2{
+        width: 350px;
+        height: 280px;
+    }
+    
+    .boton2{
+        font-size: smaller;
+        width: 100px;
+        height: 30px;
+        margin-left: 220px;
+        margin-top: 180px;
+    }
+
+    .noticia3{
+        width: 350px;
+        height: 280px;
+    }
+    
+    .noticia4{
+        width: 275px;
+        height: 380px;
+    }
+/* Termina estilo main responsive */
+
+/* Inicia estilo multimedia responsive */
+    .img-bm__team{
+    width: 350px;
+    height: 250px;
+    }
+
+    .videos-text{
+    font-size: medium;
+    }
+
+    .img-bm h2{
+    font-size: medium;
+    }
+/* Termina estilo multimedia responsive */
+
+/* Inicia estilo footer responsive */
+    .footer h3{
+        display: none;
+    }
+
+    .footer__list{
+        margin-top: 3rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo-red{
+        width: 90px;
+        height: 70px;
+    } 
+    
+    .logo-fb{
+        margin-top: 0.4rem;
+        width: 80px;
+        height: 50px;
+    }
+/* Termina estilo footer responsive */
+
+/* Inicia estilo html miembros responsive */
+    .nosotros{
+    justify-content: center;
+    }
+
+    .nosotros-text{
+    width: 100%;
+    font-size: smaller;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+
+    .nosotros{
+    margin-top: 4rem;
+    }
+/* Termina estilo html miembos responsive */
+
+/* Inicia estilo html sobre nosotros responsive */
+    .sobre-nos__text p{
+    font-size: small;
+    }
+/* Termina estilo html sobre nosotros responsive */
+
+/* Inicia estilo en contactos*/
+    form{
+    width: 320px;
+    }
+/* Termina estilo en contactos */
+}
+/* Termina responsive para celular */
