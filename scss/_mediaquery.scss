@@ -1,0 +1,156 @@
+/*Inicia responsive para celular*/
+@media screen and (max-width: 400px){
+
+    /* Inicia estilo header responsive */
+        header{
+            display: none;
+        }
+    /* Termina estilo header responsive */
+    
+    /* Inicia estilo contenedor responsive*/
+        .contenedor{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr 150px;
+            grid-template-areas: 
+            "nav"
+            "main"
+            "footer";
+        }
+    /* Termina estilo contenedor responsive*/
+    
+    /*Inicia estilo aside responsive*/
+        .aside{
+            display: none;
+        }
+    /*Termina estilo aside responsive*/
+    
+    /* Inicia estilo navegador responsive */
+    nav  .nav{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: "logo" 
+                                 "navBar";
+            .logo{
+                background: linear-gradient(to bottom, black 10%, white );
+                }
+            .nav__list li a{
+                font-size: small;
+                }
+        }
+        
+    /* Termina estilo navegador responsive */
+    
+    /* Inicia estilo main responsive */
+    main  .noticia1{
+            width: 275px;
+            height: 380px;
+            .boton1{
+                font-size: smaller;
+                width: 100px;
+                height: 30px;
+                margin-left: 150px;
+                margin-top: 280px;
+            }
+        }
+    
+    main  .noticia2{
+            width: 350px;
+            height: 280px;
+            .boton2{
+                font-size: smaller;
+                width: 100px;
+                height: 30px;
+                margin-left: 220px;
+                margin-top: 180px;
+            }
+        }
+        
+    main  .noticia3{
+            width: 350px;
+            height: 280px;
+            .boton2{
+                font-size: smaller;
+                width: 100px;
+                height: 30px;
+                margin-left: 220px;
+                margin-top: 180px;
+            }
+        }
+        
+    main  .noticia4{
+            width: 275px;
+            height: 380px;
+            .boton1{
+                font-size: smaller;
+                width: 100px;
+                height: 30px;
+                margin-left: 150px;
+                margin-top: 280px;
+            }
+        }
+    /* Termina estilo main responsive */
+    
+    /* Inicia estilo multimedia responsive */
+        .img-bm__team{
+        width: 350px;
+        height: 250px;
+        }
+    
+        .videos-text{
+        font-size: medium;
+        }
+    
+        .img-bm h2{
+        font-size: medium;
+        }
+    /* Termina estilo multimedia responsive */
+    
+    /* Inicia estilo footer responsive */
+    footer  .footer h3{
+            display: none;
+        }
+    
+    footer  .footer__list{
+            margin-top: 3rem;
+            margin-left: 10px;
+            margin-right: 10px;
+            .logo-red{
+                width: 90px;
+                height: 70px;
+            } 
+            .logo-fb{
+                margin-top: 0.4rem;
+                width: 80px;
+                height: 50px;
+            }
+        }
+    /* Termina estilo footer responsive */
+    
+    /* Inicia estilo html miembros responsive */
+        .nosotros{
+        justify-content: center;
+        margin-top: 4rem;
+            .nosotros-text{
+                width: 100%;
+                font-size: smaller;
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
+                }
+        }
+    
+    /* Termina estilo html miembos responsive */
+    
+    /* Inicia estilo html sobre nosotros responsive */
+        .sobre-nos__text p{
+        font-size: small;
+        }
+    /* Termina estilo html sobre nosotros responsive */
+    
+    /* Inicia estilo en contactos*/
+        form{
+        width: 320px;
+        }
+    /* Termina estilo en contactos */
+    }
+    /* Termina responsive para celular */

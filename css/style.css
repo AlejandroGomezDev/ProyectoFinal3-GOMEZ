@@ -418,7 +418,7 @@ textarea:focus{
     }
 
     .logo{
-        background: linear-gradient(to bottom, black 10%, white )
+        background: linear-gradient(to bottom, black 10%, white );
     }
     
     .nav__list li a{

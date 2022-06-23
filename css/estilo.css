@@ -9,10 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 300px;
   grid-template-rows: auto 150px 1fr 150px;
-  grid-template-areas: "header header"
- "nav    nav"
- "main   aside"
- "footer footer";
+  grid-template-areas: "header header" "nav    nav" "main   aside" "footer footer";
   gap: 5px; }
 
 header {
@@ -76,10 +73,7 @@ main {
     main .noticia1 .titulo1, main .noticia1 .titulo2 {
       font-family: 'Poppins', sans-serif;
       color: white;
-      text-shadow: -1px 1px 0 #000,
- 1px 1px 0 #000,
- 1px -1px 0 #000,
- -1px -1px 0 #000;
+      text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
       margin-left: 1rem; }
     main .noticia1 .titulo2 {
       font-family: 'Lato', sans-serif; }
@@ -116,10 +110,7 @@ main {
     main .noticia2 .titulo1, main .noticia2 .titulo2 {
       font-family: 'Poppins', sans-serif;
       color: white;
-      text-shadow: -1px 1px 0 #000,
- 1px 1px 0 #000,
- 1px -1px 0 #000,
- -1px -1px 0 #000;
+      text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
       margin-left: 1rem; }
     main .noticia2 .titulo2 {
       font-family: 'Lato', sans-serif; }
@@ -156,10 +147,7 @@ main {
     main .noticia3 .titulo1, main .noticia3 .titulo2 {
       font-family: 'Poppins', sans-serif;
       color: white;
-      text-shadow: -1px 1px 0 #000,
- 1px 1px 0 #000,
- 1px -1px 0 #000,
- -1px -1px 0 #000;
+      text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
       margin-left: 1rem; }
     main .noticia3 .titulo2 {
       font-family: 'Lato', sans-serif; }
@@ -196,10 +184,7 @@ main {
     main .noticia4 .titulo1, main .noticia4 .titulo2 {
       font-family: 'Poppins', sans-serif;
       color: white;
-      text-shadow: -1px 1px 0 #000,
- 1px 1px 0 #000,
- 1px -1px 0 #000,
- -1px -1px 0 #000;
+      text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
       margin-left: 1rem; }
     main .noticia4 .titulo2 {
       font-family: 'Lato', sans-serif; }
@@ -324,6 +309,112 @@ textarea:focus {
     margin-left: 1rem;
     font-family: 'Poppins', sans-serif; }
 
+/*Inicia responsive para celular*/
+@media screen and (max-width: 400px) {
+  /* Inicia estilo header responsive */
+  header {
+    display: none; }
+  /* Termina estilo header responsive */
+  /* Inicia estilo contenedor responsive*/
+  .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 150px;
+    grid-template-areas: "nav" "main" "footer"; }
+  /* Termina estilo contenedor responsive*/
+  /*Inicia estilo aside responsive*/
+  .aside {
+    display: none; }
+  /*Termina estilo aside responsive*/
+  /* Inicia estilo navegador responsive */
+  nav .nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "logo"  "navBar"; }
+    nav .nav .logo {
+      background: linear-gradient(to bottom, black 10%, white); }
+    nav .nav .nav__list li a {
+      font-size: small; }
+  /* Termina estilo navegador responsive */
+  /* Inicia estilo main responsive */
+  main .noticia1 {
+    width: 275px;
+    height: 380px; }
+    main .noticia1 .boton1 {
+      font-size: smaller;
+      width: 100px;
+      height: 30px;
+      margin-left: 150px;
+      margin-top: 280px; }
+  main .noticia2 {
+    width: 350px;
+    height: 280px; }
+    main .noticia2 .boton2 {
+      font-size: smaller;
+      width: 100px;
+      height: 30px;
+      margin-left: 220px;
+      margin-top: 180px; }
+  main .noticia3 {
+    width: 350px;
+    height: 280px; }
+    main .noticia3 .boton2 {
+      font-size: smaller;
+      width: 100px;
+      height: 30px;
+      margin-left: 220px;
+      margin-top: 180px; }
+  main .noticia4 {
+    width: 275px;
+    height: 380px; }
+    main .noticia4 .boton1 {
+      font-size: smaller;
+      width: 100px;
+      height: 30px;
+      margin-left: 150px;
+      margin-top: 280px; }
+  /* Termina estilo main responsive */
+  /* Inicia estilo multimedia responsive */
+  .img-bm__team {
+    width: 350px;
+    height: 250px; }
+  .videos-text {
+    font-size: medium; }
+  .img-bm h2 {
+    font-size: medium; }
+  /* Termina estilo multimedia responsive */
+  /* Inicia estilo footer responsive */
+  footer .footer h3 {
+    display: none; }
+  footer .footer__list {
+    margin-top: 3rem;
+    margin-left: 10px;
+    margin-right: 10px; }
+    footer .footer__list .logo-red {
+      width: 90px;
+      height: 70px; }
+    footer .footer__list .logo-fb {
+      margin-top: 0.4rem;
+      width: 80px;
+      height: 50px; }
+  /* Termina estilo footer responsive */
+  /* Inicia estilo html miembros responsive */
+  .nosotros {
+    justify-content: center;
+    margin-top: 4rem; }
+    .nosotros .nosotros-text {
+      width: 100%;
+      font-size: smaller;
+      text-align: center;
+      margin-left: 5px;
+      margin-right: 5px; }
+  /* Termina estilo html miembos responsive */
+  /* Inicia estilo html sobre nosotros responsive */
+  .sobre-nos__text p {
+    font-size: small; }
+  /* Termina estilo html sobre nosotros responsive */
+  /* Inicia estilo en contactos*/
+  form {
+    width: 320px; }
+  /* Termina estilo en contactos */ }
 
-
-
+/* Termina responsive para celular */
