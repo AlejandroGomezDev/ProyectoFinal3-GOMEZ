@@ -9,9 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 300px;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "nav    nav"
- "main   main"
- "footer footer"; }
+  grid-template-areas: "nav    nav" "main   main" "footer footer"; }
 
 nav {
   grid-area: nav;
@@ -190,10 +188,7 @@ main {
       main .noticia .noticia1 .titulo1, main .noticia .noticia1 .titulo2 {
         font-family: 'Poppins', sans-serif;
         color: white;
-        text-shadow: -1px 1px 0 #000,
- 1px 1px 0 #000,
- 1px -1px 0 #000,
- -1px -1px 0 #000;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
         margin-left: 1rem; }
       main .noticia .noticia1 .titulo2 {
         font-family: 'Lato', sans-serif; }
@@ -231,10 +226,7 @@ main {
       main .noticia .noticia2 .titulo1, main .noticia .noticia2 .titulo2 {
         font-family: 'Poppins', sans-serif;
         color: white;
-        text-shadow: -1px 1px 0 #000,
- 1px 1px 0 #000,
- 1px -1px 0 #000,
- -1px -1px 0 #000;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
         margin-left: 1rem; }
       main .noticia .noticia2 .titulo2 {
         font-family: 'Lato', sans-serif; }
@@ -272,10 +264,7 @@ main {
       main .noticia .noticia3 .titulo1, main .noticia .noticia3 .titulo2 {
         font-family: 'Poppins', sans-serif;
         color: white;
-        text-shadow: -1px 1px 0 #000,
- 1px 1px 0 #000,
- 1px -1px 0 #000,
- -1px -1px 0 #000;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
         margin-left: 1rem; }
       main .noticia .noticia3 .titulo2 {
         font-family: 'Lato', sans-serif; }
@@ -313,10 +302,7 @@ main {
       main .noticia .noticia4 .titulo1, main .noticia .noticia4 .titulo2 {
         font-family: 'Poppins', sans-serif;
         color: white;
-        text-shadow: -1px 1px 0 #000,
- 1px 1px 0 #000,
- 1px -1px 0 #000,
- -1px -1px 0 #000;
+        text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
         margin-left: 1rem; }
       main .noticia .noticia4 .titulo2 {
         font-family: 'Lato', sans-serif; }
@@ -503,6 +489,7 @@ textarea:focus {
   padding-bottom: 3.5rem; }
   .nosotros__contenedor .nosotros__historia {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly; }
     .nosotros__contenedor .nosotros__historia .historia__text {
       display: flex;
@@ -528,16 +515,13 @@ textarea:focus {
   .contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 150px;
-    grid-template-areas: "nav"
- "main"
- "footer"; }
+    grid-template-areas: "nav" "main" "footer"; }
   /* Termina estilo contenedor responsive*/
   /* Inicia estilo navegador responsive */
   nav .nav {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "logo" 
- "navBar"; }
+    grid-template-areas: "logo"  "navBar"; }
     nav .nav .logo {
       background: linear-gradient(to bottom, black 10%, white);
       display: flex;
@@ -549,9 +533,12 @@ textarea:focus {
   /* Termina estilo navegador responsive */
   /* Inicia estilo main responsive */
   main .fondo .text__fondo {
-    background-color: #1e1d36; }
+    background-color: #1e1d36;
+    font-size: 5em; }
   main .equipo .equipo__text {
     width: 100%; }
+  main .equipo .equipo__text h2 {
+    font-size: 5em; }
   main .equipo .equipo__img {
     width: 100%; }
   main .noticia {
@@ -563,7 +550,7 @@ textarea:focus {
       font-size: smaller;
       width: 100px;
       height: 30px;
-      margin-left: 80%;
+      margin-left: 70%;
       margin-top: 280px; }
   main .noticia .noticia2 {
     width: 90%;
@@ -572,7 +559,7 @@ textarea:focus {
       font-size: smaller;
       width: 100px;
       height: 30px;
-      margin-left: 80%;
+      margin-left: 70%;
       margin-top: 280px; }
   main .noticia .noticia3 {
     width: 90%;
@@ -582,7 +569,7 @@ textarea:focus {
       font-size: smaller;
       width: 100px;
       height: 30px;
-      margin-left: 80%;
+      margin-left: 70%;
       margin-top: 280px; }
   main .noticia .noticia4 {
     width: 90%;
@@ -591,8 +578,10 @@ textarea:focus {
       font-size: smaller;
       width: 100px;
       height: 30px;
-      margin-left: 80%;
+      margin-left: 70%;
       margin-top: 280px; }
+  main .calendario h2 {
+    font-size: 2.5em; }
   /* Termina estilo main responsive */
   /* Inicia estilo footer responsive */
   footer .footer__img {
@@ -605,14 +594,12 @@ textarea:focus {
   .footer__text {
     margin-top: 50px; }
   /* Termina estilo footer responsive */
-  /* Inicia estilo multimedia responsive */
   .videos-text {
     font-size: 2.5em; }
   .img-bm h2 {
     font-size: 2.5em; }
   .img-bm #carouselExampleIndicators {
     width: 90%; }
-  /* Termina estilo multimedia responsive */
   /* Inicia estilo html miembros responsive */
   .nosotros {
     justify-content: center;
@@ -625,12 +612,22 @@ textarea:focus {
       margin-right: 5px; }
   /* Termina estilo html miembos responsive */
   /* Inicia estilo html sobre nosotros responsive */
-  .sobre-nos__text p {
-    font-size: small; }
+  .nosotros__contenedor .nosotros__historia iframe {
+    width: 390px;
+    height: 200px; }
+  .nosotros__contenedor .nosotros__historia img {
+    width: 100%; }
+  .nosotros__contenedor .nosotros__historia .historia__text {
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 25px; }
+  .nosotros__contenedor .nosotros__historia .historia__text .historia__text1 {
+    font-size: 2.5em;
+    padding-left: 10px; }
   /* Termina estilo html sobre nosotros responsive */
   /* Inicia estilo en contactos*/
   form {
-    width: 320px; }
+    width: 95%; }
   /* Termina estilo en contactos */ }
 
 /* Termina responsive para celular */

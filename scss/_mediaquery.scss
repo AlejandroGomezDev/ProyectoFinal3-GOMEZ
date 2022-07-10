@@ -37,11 +37,15 @@
     /* Inicia estilo main responsive */
     main .fondo .text__fondo{
         background-color: #1e1d36;
+        font-size: 5em;
     }    
 
     main .equipo .equipo__text{
         width: 100%;
     }
+    main .equipo .equipo__text h2{
+        font-size: 5em;
+    } 
     main .equipo .equipo__img{
         width: 100%;
     }
@@ -57,7 +61,7 @@
                 font-size: smaller;
                 width: 100px;
                 height: 30px;
-                margin-left: 80%;
+                margin-left: 70%;
                 margin-top: 280px;
             }
         }
@@ -69,7 +73,7 @@
                 font-size: smaller;
                 width: 100px;
                 height: 30px;
-                margin-left: 80%;
+                margin-left: 70%;
                 margin-top: 280px;
             }
         }
@@ -82,7 +86,7 @@
             font-size: smaller;
             width: 100px;
             height: 30px;
-            margin-left: 80%;
+            margin-left: 70%;
             margin-top: 280px;
             }
         }
@@ -94,10 +98,14 @@
             font-size: smaller;
             width: 100px;
             height: 30px;
-            margin-left: 80%;
+            margin-left: 70%;
             margin-top: 280px;
             }
-        }
+        }    
+
+    main .calendario h2{
+        font-size: 2.5em;
+    }    
     /* Termina estilo main responsive */
     
     /* Inicia estilo footer responsive */
@@ -145,14 +153,27 @@
     /* Termina estilo html miembos responsive */
     
     /* Inicia estilo html sobre nosotros responsive */
-        .sobre-nos__text p{
-        font-size: small;
-        }
+    .nosotros__contenedor .nosotros__historia iframe{
+        width: 390px;
+        height: 200px;
+    }
+    .nosotros__contenedor .nosotros__historia img{
+        width: 100%;
+    }
+    .nosotros__contenedor .nosotros__historia .historia__text{
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 25px;
+    }
+    .nosotros__contenedor .nosotros__historia .historia__text .historia__text1{
+        font-size: 2.5em;
+        padding-left: 10px;
+    }
     /* Termina estilo html sobre nosotros responsive */
     
     /* Inicia estilo en contactos*/
         form{
-        width: 320px;
+        width: 95%;
         }
     /* Termina estilo en contactos */
     }

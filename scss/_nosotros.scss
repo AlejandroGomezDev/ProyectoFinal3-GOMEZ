@@ -4,6 +4,7 @@
     padding-bottom: 3.5rem;
     .nosotros__historia{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         .historia__text{
             display: flex;
