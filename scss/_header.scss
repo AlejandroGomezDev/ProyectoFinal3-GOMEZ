@@ -1,23 +1,13 @@
 
-header{
-    grid-area: header;
-    background: linear-gradient( black, white);
-    .banner img{
-        width: 100%;
-        opacity: 0.1;
-    }
-}
-
 nav{
     grid-area: nav;
     align-content: center;
+    background-color: rgba(65, 63, 63, 0.788);
     .nav{
         display: grid;
         grid-template-columns: 400px 1fr;
         grid-template-areas: "logo navBar";
         .logo img{
-            width: 250px;
-            height: 150px;
             grid-area: logo;
             margin-left: 100px;
         }
@@ -27,6 +17,8 @@ nav{
             grid-area: navBar;
             justify-content: space-evenly;
             align-items: center;
+            margin-bottom: 0rem;
+            padding-left: 0rem;
             li{
                 text-align: center;
                 list-style-type: none;
@@ -34,11 +26,11 @@ nav{
                     text-decoration: none;
                     font-family: 'Lato', sans-serif;
                     color: $text-oscuro;
-                    font-size: larger;
+                    font-size: 1.5em;
                     transition: all 400ms ease;
-                }
-                &:hover{
-                    font-size:x-large;
+                    &:hover{
+                        color: $text-claro;
+                    }
                 }
             }
         }

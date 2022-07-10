@@ -1,11 +1,6 @@
 /*Inicia responsive para celular*/
 @media screen and (max-width: 400px){
 
-    /* Inicia estilo header responsive */
-        header{
-            display: none;
-        }
-    /* Termina estilo header responsive */
     
     /* Inicia estilo contenedor responsive*/
         .contenedor{
@@ -17,13 +12,7 @@
             "footer";
         }
     /* Termina estilo contenedor responsive*/
-    
-    /*Inicia estilo aside responsive*/
-        .aside{
-            display: none;
-        }
-    /*Termina estilo aside responsive*/
-    
+       
     /* Inicia estilo navegador responsive */
     nav  .nav{
             display: grid;
@@ -32,99 +21,114 @@
                                  "navBar";
             .logo{
                 background: linear-gradient(to bottom, black 10%, white );
+                display: flex;
+                justify-content: center;
                 }
             .nav__list li a{
-                font-size: small;
+                font-size: 1em;
                 }
         }
-        
+    nav .nav .nav__list{
+        padding-left: 0rem;
+    }
+    
     /* Termina estilo navegador responsive */
     
     /* Inicia estilo main responsive */
-    main  .noticia1{
-            width: 275px;
+    main .fondo .text__fondo{
+        background-color: #1e1d36;
+    }    
+
+    main .equipo .equipo__text{
+        width: 100%;
+    }
+    main .equipo .equipo__img{
+        width: 100%;
+    }
+
+    main .noticia{
+        width: 100%;
+    }
+
+    main  .noticia .noticia1{
+            width: 90%;
             height: 380px;
             .boton1{
                 font-size: smaller;
                 width: 100px;
                 height: 30px;
-                margin-left: 150px;
+                margin-left: 80%;
                 margin-top: 280px;
             }
         }
     
-    main  .noticia2{
-            width: 350px;
-            height: 280px;
-            .boton2{
-                font-size: smaller;
-                width: 100px;
-                height: 30px;
-                margin-left: 220px;
-                margin-top: 180px;
-            }
-        }
-        
-    main  .noticia3{
-            width: 350px;
-            height: 280px;
-            .boton2{
-                font-size: smaller;
-                width: 100px;
-                height: 30px;
-                margin-left: 220px;
-                margin-top: 180px;
-            }
-        }
-        
-    main  .noticia4{
-            width: 275px;
+    main  .noticia .noticia2{
+            width: 90%;
             height: 380px;
-            .boton1{
+            .boton2{
                 font-size: smaller;
                 width: 100px;
                 height: 30px;
-                margin-left: 150px;
+                margin-left: 80%;
                 margin-top: 280px;
+            }
+        }
+        
+    main  .noticia .noticia3{
+            width: 90%;
+            height: 380px;
+            margin-top: 20px;
+        .boton2{
+            font-size: smaller;
+            width: 100px;
+            height: 30px;
+            margin-left: 80%;
+            margin-top: 280px;
+            }
+        }
+        
+    main  .noticia .noticia4{
+            width: 90%;
+            height: 380px;
+        .boton1{
+            font-size: smaller;
+            width: 100px;
+            height: 30px;
+            margin-left: 80%;
+            margin-top: 280px;
             }
         }
     /* Termina estilo main responsive */
     
-    /* Inicia estilo multimedia responsive */
-        .img-bm__team{
-        width: 350px;
-        height: 250px;
-        }
-    
-        .videos-text{
-        font-size: medium;
-        }
-    
-        .img-bm h2{
-        font-size: medium;
-        }
-    /* Termina estilo multimedia responsive */
-    
     /* Inicia estilo footer responsive */
-    footer  .footer h3{
-            display: none;
-        }
-    
-    footer  .footer__list{
-            margin-top: 3rem;
-            margin-left: 10px;
-            margin-right: 10px;
-            .logo-red{
-                width: 90px;
-                height: 70px;
-            } 
-            .logo-fb{
-                margin-top: 0.4rem;
-                width: 80px;
-                height: 50px;
-            }
-        }
+    footer  .footer__img{
+        display: none;
+    }
+    .footer .footer__list{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer__text{
+        margin-top: 50px;
+    }
     /* Termina estilo footer responsive */
+    
+    // Inicia estilo multimedia responsive
+    .videos-text{
+        font-size: 2.5em;
+    }
+
+    .img-bm h2{
+        font-size: 2.5em;
+    }
+
+    .img-bm #carouselExampleIndicators{
+        width: 90%;
+    }
+    // Termina estilo multimedia responsive
     
     /* Inicia estilo html miembros responsive */
         .nosotros{
@@ -138,7 +142,6 @@
                 margin-right: 5px;
                 }
         }
-    
     /* Termina estilo html miembos responsive */
     
     /* Inicia estilo html sobre nosotros responsive */
